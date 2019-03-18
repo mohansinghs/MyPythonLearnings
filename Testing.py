@@ -9,7 +9,7 @@ try:
     elif operation == '*':
         print(a*b)
     elif operation == '^':
-        print(pow(a, b))
+            print(pow(a, b))
     elif operation == '%':
         if b == 0:
             print('Oops second value is \'Zero\'. Denominator can\'t be is Zero.')
@@ -24,5 +24,5 @@ try:
         print('select accurate operation from list')
 except ValueError as error:
     print('Wrong Input, please enter only digit')
-
-
+except OverflowError as error:
+    print('Result too large for Power')
