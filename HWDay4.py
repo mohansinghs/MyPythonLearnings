@@ -4,5 +4,5 @@ sbu = input('Enter SBU:- ')
 print('If you want to change SBU please enter new SBU')
 sbu = input('Enter New SBU:- ')
 print('Your SBU is changed successfully check below')
-print('Name:- {0}'.format(name))
+print('\033[1m' + ' Name:- {0}'.format(name))
 print('SBU:-{0}'.format(sbu))                                       # to override never create new input
